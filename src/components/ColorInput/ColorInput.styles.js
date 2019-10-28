@@ -8,8 +8,9 @@ const useStyles = createUseStyles({
         width: 100,
         height: 50,
         border: "1px solid black",
-        padding: [8, 12],
+        padding: [4, 6],
         "& input": {
+            fontSize: 8,
             width: "100%"
         }
     }
