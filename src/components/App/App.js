@@ -1,11 +1,12 @@
 import React from 'react';
 import useStyles from './App.styles'
+import Picker from 'components/Picker';
 
 function App() {
   const classes = useStyles();
   return (
     <div className={classes.App}>
-      Hello world
+      <Picker/>
     </div>
   );
 }
