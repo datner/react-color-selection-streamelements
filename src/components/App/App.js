@@ -1,9 +1,10 @@
 import React from 'react';
-import './App.css';
+import useStyles from './App.styles'
 
 function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
+    <div className={classes.App}>
       Hello world
     </div>
   );
