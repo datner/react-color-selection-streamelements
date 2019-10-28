@@ -10,8 +10,8 @@ const Swatch = props => {
     )
 }
 
-Swatch.propTypes = {}
-
-Swatch.defaultProps = {}
+Swatch.propTypes = {
+    color: PropTypes.string.isRequired,
+}
 
 export default Swatch
