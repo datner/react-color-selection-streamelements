@@ -2,11 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import useStyles from './ColorInput.styles'
 
-const ColorInput = props => {
+const ColorInput = ({color}) => {
     const classes = useStyles();
+    console.log(color)
     return (
         <div className={classes.ColorInput}>
-            <input type="text" name="color" id="hstString"/>
+            <input type="text" value={color} disabled name="color" id="hstString"/>
         </div>
     )
 }
