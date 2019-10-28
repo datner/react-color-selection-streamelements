@@ -1,8 +1,13 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
+import ColorTooltip from 'components/ColorTooltip'
 
-const Picker = ({setColor}) => {
+const Picker = ({ setColor }) => {
     const canvasRef = useRef(null)
+    const [hover, setHover] = useState(false);
+    const [clientX, setClientX] = useState(0);
+    const [clientY, setClientY] = useState(0);
+    const [hoverColor, setHoverColor] = useState("rgb(255,255,255)");
 
     useEffect(() => {
         const canvas = canvasRef.current
@@ -22,10 +27,23 @@ const Picker = ({setColor}) => {
         setColor(pixel)
     }
 
-    return (
-        <canvas height={100} width={100} ref={canvasRef} onClick={handleClick} id="picker">
+    const handleHover = e => {
+        const { x, y } = getMousePos(canvasRef, e)
+        const canvas = canvasRef.current
+        const ctx = canvas.getContext('2d');
+        const pixel = ctx.getImageData(x, y, 1, 1).data;
+        setClientX(e.clientX)
+        setClientY(e.clientY)
+        setHover(true)
+        setHoverColor(`rgba(${pixel.join(", ")})`)
+        console.count()
+    }
 
-        </canvas>
+    return (
+        <>
+            <canvas onMouseMove={handleHover} onMouseEnter={handleHover} onMouseLeave={() => setHover(false)} height={100} width={100} ref={canvasRef} onClick={handleClick} id="picker"></canvas>
+            <ColorTooltip active={hover} x={clientX} y={clientY} color={hoverColor} />
+        </>
     )
 }
 
