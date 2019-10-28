@@ -16,7 +16,7 @@ Happy coding!
 You are requested to fulfill the following user stories: </br>
 ~~**User Story #1**: I can see a 100x100px element with a corresponding `id="picker"​`.~~
 ~~The element will show a gradient going from black to the color of your choice. </br>~~
-**User Story #2**: I can see a 50x100px element with a corresponding `id="swatch"​`. </br>
+~~**User Story #2**: I can see a 50x100px element with a corresponding `id="swatch"​`. </br>~~
 **User Story #3**: I can see an input with a corresponding **id="hslString"​**. </br>
 **User Story #4**: When I click anywhere inside the `#picker​` element, the `#swatch​` element background is updated and shows the clicked color. </br>
 **User Story #5**: When I click anywhere inside the `#picker​` element, the `#hslString​` input is updated and show the HSL string of the clicked color. </br>
