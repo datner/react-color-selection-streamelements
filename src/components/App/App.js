@@ -13,7 +13,7 @@ function App() {
     <div className={classes.App}>
       <Picker setColor={changeColor} />
       <div>
-      <ColorInput/>
+      <ColorInput color={color}/>
       <Swatch color={color} />
       </div>
     </div>
