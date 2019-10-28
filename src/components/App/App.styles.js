@@ -2,7 +2,10 @@ import { createUseStyles } from 'react-jss'
 
 const useStyles = createUseStyles({
     App: {
-        textAlign: "center"
+        height: '100vh',
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
     }
 })
 
