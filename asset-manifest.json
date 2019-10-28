@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-color-selection-streamelements/static/css/main.338e0d68.chunk.css",
+    "main.js": "/react-color-selection-streamelements/static/js/main.874f2275.chunk.js",
+    "main.js.map": "/react-color-selection-streamelements/static/js/main.874f2275.chunk.js.map",
+    "runtime-main.js": "/react-color-selection-streamelements/static/js/runtime-main.912b4e4c.js",
+    "runtime-main.js.map": "/react-color-selection-streamelements/static/js/runtime-main.912b4e4c.js.map",
+    "static/js/2.bb4125ff.chunk.js": "/react-color-selection-streamelements/static/js/2.bb4125ff.chunk.js",
+    "static/js/2.bb4125ff.chunk.js.map": "/react-color-selection-streamelements/static/js/2.bb4125ff.chunk.js.map",
+    "index.html": "/react-color-selection-streamelements/index.html",
+    "precache-manifest.b83330a9762947fd948a61d422777700.js": "/react-color-selection-streamelements/precache-manifest.b83330a9762947fd948a61d422777700.js",
+    "service-worker.js": "/react-color-selection-streamelements/service-worker.js",
+    "static/css/main.338e0d68.chunk.css.map": "/react-color-selection-streamelements/static/css/main.338e0d68.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.912b4e4c.js",
+    "static/js/2.bb4125ff.chunk.js",
+    "static/css/main.338e0d68.chunk.css",
+    "static/js/main.874f2275.chunk.js"
+  ]
+}
