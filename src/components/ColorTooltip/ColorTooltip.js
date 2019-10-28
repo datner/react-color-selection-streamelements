@@ -8,7 +8,7 @@ const ColorTooltip = ({ active, ...props }) => {
     return (
         ReactDOM.createPortal(
             active ?
-                <div className={classes.ColorTooltip} /> : null,
+                <div style={{top: props.y, left: props.x, background: props.color}} className={classes.ColorTooltip} /> : null,
             document.body
         )
     )
